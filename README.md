@@ -1,0 +1,3 @@
+# README
+
+This is the bibliography of my work for the Master thesis. I'll try to keep it updated through my readings....
