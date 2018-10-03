@@ -2,6 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{natbib}
 
 \title{Commented Bibliography}
 \author{\'Etienne Houzé}
@@ -11,42 +12,48 @@
 \maketitle
     \section{Read}
     \begin{itemize}
-    \item \cite{marcus2018innateness} is a discussion on the article presenting AlphaZero as a \emph{tabula rasa} method \cite{silver2017mastering}. It objects that since it has been engineered by experts in the go game, its very architecture already carries some specificities aimed at solvig this particular problem.
+    \item \citep{marcus2018innateness} is a discussion on the article presenting AlphaZero as a \emph{tabula rasa} method \citep{silver2017mastering}. It objects that since it has been engineered by experts in the go game, its very architecture already carries some specificities aimed at solvig this particular problem.
 
-    \item\cite{russell2016artificial} is a good handbook presenting the main techniques in AI. In particular, it describes knowledge-based systems and logic representation of the environment (Part III). Other parts are interesting too, but not as much linked to this work.
+    \item\citep{russell2016artificial} is a good handbook presenting the main techniques in AI. In particular, it describes knowledge-based systems and logic representation of the environment (Part III). Other parts are interesting too, but not as much linked to this work.
 
-    \item\cite{dessalles2015conceptual}  presents an approach to define and name concepts in a geometric space (Contrast). It comes from the works in \cite{gardenfors2004conceptual} which introduces the existence of dimensions in the conceptualisation of the environment.
+    \item\citep{dessalles2015conceptual}  presents an approach to define and name concepts in a geometric space (Contrast). It comes from the works in \citep{gardenfors2004conceptual} which introduces the existence of dimensions in the conceptualisation of the environment.
 
-    \item\cite{dessalles2008computational} defines a conflict as a situation when an event happens but is not desired, or when a desired event is not observed. It also presents a conflict resolution based on CAN. This approach can be used to generate dialogue between the user and the system in case of a conflict.
+    \item\citep{dessalles2008computational} defines a conflict as a situation when an event happens but is not desired, or when a desired event is not observed. It also presents a conflict resolution based on CAN. This approach can be used to generate dialogue between the user and the system in case of a conflict.
 
-    \item\cite{dovsilovic2018explainable} is a quick global survey of the state of explanation in AI today. It offers a succint view but states well the current struggles of technologies used in most state-of-the-art solutions.
+    \item\citep{dovsilovic2018explainable} is a quick global survey of the state of explanation in AI today. It offers a succint view but states well the current struggles of technologies used in most state-of-the-art solutions.
 
-    \item\cite{zimmermann2017user} is a short surver on the desires of users in Germany about the smart home. It concludes that, with Germany being the main market in Europe (\$1.3B), it still has room for increase (for instance, in the US, smart homes business is worth \$13B). It also shows on a very small sample that it seems users tend to put energy savings as the first incentive to use a smart home, with a predominance of independence for the older users (above 50).
+    \item\citep{zimmermann2017user} is a short surver on the desires of users in Germany about the smart home. It concludes that, with Germany being the main market in Europe (\$1.3B), it still has room for increase (for instance, in the US, smart homes business is worth \$13B). It also shows on a very small sample that it seems users tend to put energy savings as the first incentive to use a smart home, with a predominance of independence for the older users (above 50).
 
-    \item\cite{kaptein2017emotion} presents the role of emotions in explanations. They can influence in three different ways :
+    \item\citep{kaptein2017emotion} presents the role of emotions in explanations. They can influence in three different ways :
     \begin{itemize}
         \item Emotions can be used to understand which kind of explanation the user wants at time $t$.
         \item Emotions can be used by the system to better describe the phenomena occuring and explain them to the user.
         \item It can also be interseting for the system to look for the causes of emotions and then explain them.
     \end{itemize}
     
-    \item\cite{mohamed2017conflict} exposes the issues of conflicts arising when several agents have different behaviours. Its work is not that much related to ours since it focuses on multi-resident activities, which is not the key part of our project.
+    \item\citep{mohamed2017conflict} exposes the issues of conflicts arising when several agents have different behaviours. Its work is not that much related to ours since it focuses on multi-resident activities, which is not the key part of our project.
 
-    \item\cite{amarasinghe2018toward} examines a framework to explain decision made by DNNs in case an anomaly happens. This work being centered around deep learning technologies, it is not extremely relevant to ours. It would however be nice to see if a connection is possible between this conflict detection with neural nets and an explainable approach.
+    \item\citep{amarasinghe2018toward} examines a framework to explain decision made by DNNs in case an anomaly happens. This work being centered around deep learning technologies, it is not extremely relevant to ours. It would however be nice to see if a connection is possible between this conflict detection with neural nets and an explainable approach.
 
-    \item\cite{blier2017universal} is a master's thesis work recommended by David. It is about using complexity theory and applying it to deep learning models to sutdy whether the DL approach produces simple models in this redards. \cite{blierdescription} is a short version of this, in an article style.
+    \item\citep{blier2017universal} is a master's thesis work recommended by David. It is about using complexity theory and applying it to deep learning models to sutdy whether the DL approach produces simple models in this redards. \citep{blierdescription} is a short version of this, in an article style.
+
+    \item \citep{olson2018system} studies the possibility of combining AI to explain ML in medical applications. The method can be interesting for us, especially for their knowledge storage in a database structure.
+
+    \item \citep{lalanda2014icasa} describes iCasa and therefore should be cited in our technical presentation of the simulation.
+
+    \item \citep{ehrlinger2016towards} proposes to precisely define knowledge graphs and present possible applications. The definition of a KG is then the following : \emph{A knowledge graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge}.
     
     \end{itemize}
 
     
     \section{To read}
     \begin{itemize}
-        \item Maybe read or ask about PA's work on knowledge transfer and analogies, since our method may rely on similar techniques to create rules and explain things
+        \item Read or ask about Pierre Alexandre work on knowledge transfer and analogies, since our method may rely on similar techniques to create rules and explain things
 
         \item See if complexity theory can be a hint to evaluate the relevance of an explanation following Occam's razor. In fact, the most simple cause should explain and most certainly be the most relevant to the human user.
     \end{itemize}
     
 \newpage
-\bibliographystyle{unsrt}
+\bibliographystyle{agsm}
 \bibliography{biblio}
 \end{document}
